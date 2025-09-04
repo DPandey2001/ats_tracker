@@ -1,6 +1,6 @@
 export class AIMatcher {
     constructor() {
-        this.apiKey = 'AIzaSyC3sg_kogGFbZw1ZbAxpZyCKACMJkxk1rE';
+        this.apiKey = import.meta.env.VITE_GOOGLE_API_KEY || 'AIzaSyC3sg_kogGFbZw1ZbAxpZyCKACMJkxk1rE';
         this.apiUrl = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent';
     }
 

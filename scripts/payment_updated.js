@@ -1,6 +1,6 @@
 export class PaymentProcessor {
     constructor() {
-        this.apiKey = 'pk_test_51234567890'; // Demo Stripe key
+        this.apiKey = import.meta.env.VITE_STRIPE_API_KEY || 'pk_test_51234567890'; // Demo Stripe key
         this.plans = {
             starter: { id: 'price_starter', amount: 3770 },
             professional: { id: 'price_professional', amount: 10270 }
